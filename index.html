@@ -1,0 +1,197 @@
+<html>
+<head>
+	<title>Free Long-Tail Keyword Research Tool by Suggest-o-Matic</title>
+	<meta name="description" content="Get thousands of long tail keyword suggestions for your SEO or PPC campaigns - totally free and easy to use!">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans|Yellowtail' rel='stylesheet' type='text/css'>
+	<link href="styles.css" rel="stylesheet">
+	<link rel="canonical" href="http://www.suggestomatic.com/" />
+</head>
+<body>
+
+<div class="container">
+
+	<div class="block header">
+		<h1><a href="http://www.suggestomatic.com/">The Best <u>Free</u> Keyword Research Tool</a></h1>
+		<h2>Suggest-o-Matic</h2>
+	</div>
+
+	<div class="block">
+		
+		<p>New around here? Read the <a href="#instructions">Instructions</a>.</p>
+		
+		<div class="block-element">
+			<label>Seed keywords</label><br>
+			<textarea style="height: 85px;" id="seed_keywords" placeholder="Keywords to start your search, 1 per line, eg. 
+cushion covers
+pillow covers"></textarea>
+		</div>
+		
+		<br>
+		
+		<div class="block-element">
+			<label>Negative Keywords</label><br>
+			<textarea style="height: 85px;" id="negative_keywords" placeholder="Negative keywords to exclude from results, 1 per line, eg.
+floral"></textarea>
+		</div>
+		
+		<div style="clear: both;"></div>
+		<br>
+		
+		<div class="block-element">
+			<div style="width: 33%; float: left;">
+				<input type="checkbox" data-engine="google_com" id="check_use_google_com" checked="checked"> <label for="check_use_google_com">Google.com</label> <br>
+				<input type="checkbox" data-engine="google_couk" id="check_use_google_couk"> <label for="check_use_google_couk">Google.co.uk</label> <br>
+				<input type="checkbox" data-engine="google_fr" id="check_use_google_fr"> <label for="check_use_google_fr">Google.fr</label> <br>
+				<input type="checkbox" data-engine="google_es" id="check_use_google_es"> <label for="check_use_google_es">Google.es</label> <br>
+			</div>
+			<div style="width: 33%; float: left;">
+				<input type="checkbox" data-engine="yahoo" id="check_use_yahoo"> <label for="check_use_yahoo">Yahoo</label><br>
+				<input type="checkbox" data-engine="bing" id="check_use_bing"> <label for="check_use_bing">Bing</label><br>
+				<input type="checkbox" data-engine="blekko" id="check_use_blekko"> <label for="check_use_blekko">Blekko</label><br>
+			</div>
+			<div style="width: 33%; float: left;">
+				<input type="checkbox" data-engine="youtube" id="check_use_youtube"> <label for="check_use_youtube">Youtube</label><br>
+				<input type="checkbox" data-engine="amazon" id="check_use_amazon"> <label for="check_use_amazon">Amazon</label><br>
+				<input type="checkbox" data-engine="ebay" id="check_use_ebay"> <label for="check_use_ebay">eBay</label><br>
+				
+			</div>
+		</div>
+		
+		<div style="clear: both;"></div>
+		<br>
+		
+		<div class="block-element">
+			<input type="button" id="gogobutton" value="Search" class="green-sea-flat-button" style="width: 31%;"> &nbsp;
+			<input type="button" id="stopbutton" value="Stop" class="pomegranate-flat-button" style="width: 31%;"> &nbsp;
+			<input type="button" id="resetbutton" value="Reset" class="wet-asphalt-flat-button" style="width: 31%;">
+		</div>
+		
+		<div style="clear: both;"></div>
+		<hr>
+		
+		<div class="block-element" id="results">
+			<h3>Suggestions</h3>
+			
+			<div class="found-counter">
+				<span id="result_keywords_count">0</span>
+				Found
+			</div>
+			<div class="found-counter">
+				<span id="unchecked_keywords_count">0</span>
+				Queued
+			</div>
+			
+			<div style="margin-top: 15px;"></div>
+			
+			<textarea style="height: 250px;" id="result_keywords" placeholder="Your results will appear here..."></textarea>
+		</div>
+	</div>
+	
+	<div class="block">
+		<h3>Find me useful? Please share the love...</h3>
+		
+		<div style="text-align: center;">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.suggestomatic.com/" data-dnt="true">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			
+			&nbsp;
+			
+			<div class="fb-like" data-href="http://www.suggestomatic.com/" data-layout="box_count" data-action="like" data-show-faces="false" data-share="false"></div>
+			<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+			
+			&nbsp;
+			
+			<script src="//platform.linkedin.com/in.js" type="text/javascript" async="true"></script>
+			<script type="IN/Share" data-url="http://www.suggestomatic.com/" data-counter="top"></script>
+			
+			&nbsp;
+			
+			<!-- Place this tag where you want the +1 button to render. -->
+			<div class="g-plusone" data-size="tall" data-href="http://www.suggestomatic.com/"></div>
+			<!-- Place this tag after the last +1 button tag. -->
+			<script type="text/javascript">
+			  (function() {
+			    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+			    po.src = 'https://apis.google.com/js/platform.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+			  })();
+			</script>
+			
+			&nbsp;
+			
+			<!-- Place this tag where you want the su badge to render -->
+			<su:badge layout="5" location="http://www.suggestomatic.com/"></su:badge>
+			<!-- Place this snippet wherever appropriate -->
+			<script type="text/javascript">
+			  (function() {
+			    var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true;
+			    li.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//platform.stumbleupon.com/1/widgets.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s);
+			  })();
+			</script>
+			
+			<br><br>
+			<a class="twitter-timeline" href="https://twitter.com/suggest_o_matic" data-widget-id="501776634286837760">Tweets by @suggest_o_matic</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			
+		</div>
+	</div>
+	
+	<div class="block">
+		<a name="instructions"></a>
+		<h3>Instructions</h3>
+		<h4>What is this?</h4>
+		<p>Suggest-o-Matic is a keyword research tool for SEO's or PPC professionals who need keyword suggestions for their campaigns.</p>
+		<p>Using our free keyword suggestion tool you can look up related keywords to your search terms.</p>
+		
+		<h4>How does it work?</h4>
+		<p>Suggest-o-Matic fires off automated keyword requests to Google, Bing, Amazon and others and asks them for related search terms and auto-suggest responses that other users have typed in before. This way you can be sure that you are getting genuine search terms real users are searching for.</p>
+		<p>Simply fill in your desired keywords and we go off and find all the related searches we can.</p>
+		
+		<h4>Wildcard (*) Searches</h4>
+		<p>Use a wildcard in your seed terms to inform Google that you want all matches, for example the term "* houses" would return results for "london houses", "luxury houses", "buying houses" etc.</p>
+		<p>Only Google search engines support this wildcard search presently.</p>
+		
+		
+		<h4>SEO Keyword Research</h4>
+		<p>This is a perfect tool for seo keyword research because it uses real searched for data from our search engine suppliers. The data returned is guaranteed to have been search for by a large number of users.</p>
+		
+		<h4>Long-tail keywords</h4>
+		<p>Finding effective long-tail keywords is the holy grail of SEO, use wildcard matches to search for long tail terms to focus with your SEO campaigns.</p>
+		
+		<h4>Can I use this free tool for PPC and Adwords research?</h4>
+		<p>Suggest-o-matic is great for finding highly searched for exact match phrases. You can then refine what you find to look for negative keywords.</p>
+		
+		<h4>Negative phrase research</h4>
+		<p>Researching negative keywords is an important part of building an Adwords campaign, you can use the keyword suggestions found to find bad keywords that you may want to add in to your campaigns as negative terms to avoid wasting budget before you have even started.</p>
+	</div>
+	
+	<div class="block footer">
+		<p>Get in touch via <a href="mailto:hello@suggestomatic.com">Email</a> or <a href="http://twitter.com/suggest_o_matic">Twitter</a></p>
+		<p>Lovingly made by <a href="http://rosswritescode.co.uk">Ross Scrivener - Ipswich Freelance Developer</a></p>
+		<span>&copy; 2014 Suggest-o-Matic</span>
+		<span> - The best free keyword research tool</span>
+		
+	</div>
+	
+</div>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="app.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-53957727-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
